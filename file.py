@@ -11,7 +11,7 @@ class Node:
         return self.score
     
     def goal_test(self, goal_node):
-        if goal_node == self: return True
+        return goal_node == self
 
 class Solution:
 
@@ -36,6 +36,7 @@ class Solution:
     def ida_star(self, root, goal_node):
         self.goal_node = goal_node
         threshold = root.score
+
         while True:
             result, optimal_path = self.search(root, threshold, [root])
             if result == "FOUND":
