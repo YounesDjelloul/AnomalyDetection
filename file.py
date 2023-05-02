@@ -86,3 +86,14 @@ class Solution:
 
 solution = Solution()
 print(solution.TestSolution())
+
+
+'''
+    Time Complexity of this Algorithm is O(B^C)
+    
+    Where:
+        B is the branching factor which is 2 in our case
+        C is the depth to the goal node
+        
+    N = b^1 + b^2 + ... + b^C
+'''
